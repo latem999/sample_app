@@ -12,7 +12,6 @@ describe "Static pages" do
     end
     
     it "should have the right title" do
-      puts("#{:base_title} Home")
       visit '/static_pages/home'
       expect(page).to have_title("#{base_title} Home")
     end
